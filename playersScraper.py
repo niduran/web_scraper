@@ -60,7 +60,7 @@ def import_data():
     df_subset.loc[:, "date_of_birth"] = pd.to_datetime(df_subset["date_of_birth"], format='%d.%m.%Y')
     try:
         df_subset.to_sql("players", engine, if_exists='append', index=False)
-        print("Data imported successfully.")
+        print("Data imported successfully from csv.")
     except Exception as e:
         print("Error:", e)
 
