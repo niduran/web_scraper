@@ -2,7 +2,7 @@
 
 ## creating local postgres database
 ### requirements:
-    installed Docker
+installed Docker
 
 ### command for creating postgres database
 ```shell
