@@ -1,20 +1,20 @@
 # web_scraper
 
-## creating local postgres database
-### requirements:
+### creating local postgres database
+requirements:
 installed Docker
 
-### command for creating postgres database
+command for creating postgres database
 ```shell
 docker run -d  -p 5432:5432 -e POSTGRES_USER=ci -e POSTGRES_PASSWORD=SomeRandomPassword! -e POSTGRES_DB=football postgres
 ```
 
-## Run python script
+### Run python script
 ```shell
 python playersScraper.py playerURLs.csv
 ```
 
-## Description
+### Description
 Retrieving data from wikipedia was taken from infobox.
 By studying the data, footballers have something in the 'Senior carrer*' or 'International career‡' category, I don't consider urls that don't have that part on the page as footballers.
 
