@@ -11,7 +11,7 @@ docker run -d  -p 5432:5432 -e POSTGRES_USER=ci -e POSTGRES_PASSWORD=SomeRandomP
 
 ### Run python script
 ```shell
-python playersScraper.py playerURLs.csv
+python playersScraper.py playersURLs.csv
 ```
 
 ### Description
