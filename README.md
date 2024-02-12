@@ -6,6 +6,9 @@ installed Docker
 
 command for creating postgres database:
 ```shell
+docker pull postgres
+```
+```shell
 docker run -d  -p 5432:5432 -e POSTGRES_USER=ci -e POSTGRES_PASSWORD=SomeRandomPassword! -e POSTGRES_DB=football postgres
 ```
 
